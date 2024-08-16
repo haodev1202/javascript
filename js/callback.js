@@ -34,3 +34,32 @@ function alertFinished(done) {
 }
 
 doHomeWork("math", alertFinished);
+
+// PlaceOrder : Đặt hàng
+// orderDetails : Đặt hàng chi tiết
+function placeOrder(orderDetails , callback) {
+    console.log(`Placing order: ${orderDetails}`);
+
+    setTimeout(() => {
+        console.log('Order placed successfully.');
+        callback();
+    }, 2000);
+}
+
+function processPayment(callback) {
+    console.log('Processing payment .....');
+    setTimeout(() => {
+        console.log("Payment processed successfully.");
+        callback();
+    }, 3000);
+}
+
+function confirmOrder() {
+    console.log("Order cofirm. Thank you for your purchase!");
+}
+
+placeOrder("order for a laptop" , function() {
+    processPayment(function() {
+        confirmOrder();
+    });
+})
