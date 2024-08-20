@@ -20,6 +20,8 @@ second();
 // Do vậy để đảm bảo thực hiện đúng thứ tự thì ta cần sử dụng đến khái niệm callback
 // Nó sẽ đảm bảo code sẽ không hoạt động trước khi code khác hoàn thành việc thực thi
 //ok
+
+// ok ok ok
 function doHomeWork(subject, callback) {
     console.log(`Start my ${subject} homework.`);
     callback(() => {
