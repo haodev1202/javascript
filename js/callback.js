@@ -21,7 +21,7 @@ second();
 // Nó sẽ đảm bảo code sẽ không hoạt động trước khi code khác hoàn thành việc thực thi
 //ok
 
-// ok ok ok
+// ok ok ok OK
 function doHomeWork(subject, callback) {
     console.log(`Start my ${subject} homework.`);
     callback(() => {
